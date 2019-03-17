@@ -1,0 +1,9 @@
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\netstandard2.0\PlayStudiosApi.DataAccess.deps.json
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\netstandard2.0\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.AssemblyInfoInputs.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.AssemblyInfo.cs
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\netstandard2.0\PlayStudiosApi.DataAccess.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.csprojAssemblyReference.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\netstandard2.0\PlayStudiosApi.DataAccess.pdb

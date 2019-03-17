@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PlayStudiosApi.Models
+namespace PlayStudiosApi.Domain.Models
 {
-    public class PlayerProgress
+    public class QuestState
     {
         public int TotalQuestPercentCompleted { get; set; }
         public int LastMilestoneIndexCompleted { get; set; }

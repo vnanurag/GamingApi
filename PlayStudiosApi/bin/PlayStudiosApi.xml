@@ -481,19 +481,19 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="M:PlayStudiosApi.Controllers.QuestController.PostPlayerProgress(PlayStudiosApi.Models.PlayerInfo)">
+        <member name="M:PlayStudiosApi.Controllers.QuestController.GetQuestProgress(PlayStudiosApi.Service.Models.PlayerInfo)">
             <summary>
-            Posts the player's progress in the quest
+            Gets the Quest progress
             </summary>
             <param name="playerInfo">Player information</param>
-            <returns>Player's progress in the quest thus far</returns>
+            <returns>Quest progress thus far</returns>
         </member>
-        <member name="M:PlayStudiosApi.Controllers.QuestController.GetPlayerState(System.String)">
+        <member name="M:PlayStudiosApi.Controllers.QuestController.GetQuestState(System.String)">
             <summary>
-            Gets a player's state in the quest
+            Gets the Quest state for a player
             </summary>
             <param name="playerId">Id of the player</param>
-            <returns>Player's overall progress</returns>
+            <returns>Quest state</returns>
         </member>
         <member name="M:PlayStudiosApi.Controllers.ValuesController.Get">
             <summary>

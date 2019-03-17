@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PlayStudiosApi.Models
+namespace PlayStudiosApi.Domain.Models
 {
     public class MilestoneInfo
     {
