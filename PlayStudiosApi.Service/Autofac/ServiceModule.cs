@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using NLog;
+using PlayStudiosApi.Service.Configuration;
 using PlayStudiosApi.Service.Services;
 using PlayStudiosApi.Service.Services.Interfaces;
 using System;
@@ -20,9 +20,8 @@ namespace PlayStudiosApi.Service.Autofac
                 .As<IQuestService>();
 
             builder
-                .RegisterType<Logger>()
-                .As<ILogger>()
-                .SingleInstance();
+                .RegisterType<QuestConfiguration>()
+                .AsSelf();
         }
     }
 }

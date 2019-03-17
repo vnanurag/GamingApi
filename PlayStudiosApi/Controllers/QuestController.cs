@@ -1,7 +1,7 @@
-﻿using NLog;
-using PlayStudiosApi.Domain.Models;
+﻿using PlayStudiosApi.Domain.Models;
 using PlayStudiosApi.Service.Models;
 using PlayStudiosApi.Service.Services.Interfaces;
+using Serilog;
 using System;
 using System.Web.Http;
 using System.Web.Http.Description;
@@ -15,7 +15,7 @@ namespace PlayStudiosApi.Controllers
         private readonly ILogger _logger;
 
         public QuestController(
-            IQuestService questService, 
+            IQuestService questService,
             ILogger logger)
         {
             _questService = questService;

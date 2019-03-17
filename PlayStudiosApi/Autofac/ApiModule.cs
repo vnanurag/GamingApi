@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
-using System.Reflection;
 using Module = Autofac.Module;
 
 namespace PlayStudiosApi.Autofac
@@ -13,7 +12,7 @@ namespace PlayStudiosApi.Autofac
 
             // Register Api controllers
             builder
-                .RegisterApiControllers(Assembly.GetExecutingAssembly());
+                .RegisterApiControllers(typeof(ApiModule).Assembly);
         }
     }
 }

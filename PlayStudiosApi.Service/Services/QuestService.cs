@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using NLog;
 using PlayStudiosApi.Domain.Models;
 using PlayStudiosApi.Service.Configuration;
 using PlayStudiosApi.Service.Models;
 using PlayStudiosApi.Service.Services.Interfaces;
+using Serilog;
 using System;
 
 namespace PlayStudiosApi.Service.Services
@@ -13,12 +13,12 @@ namespace PlayStudiosApi.Service.Services
     {
         private readonly ILogger _logger;
         private readonly QuestConfiguration _configuration;
-        private int RateFromBet;
-        private int LevelBonusRate;
-        private int TargetQuestPoints;
-        private int MilestonesPerQuest;
-        private int MilestonesReward;
-        private int MilestoneLimit;
+        private int RateFromBet = 10;
+        private int LevelBonusRate = 20;
+        private int TargetQuestPoints = 1000;
+        private int MilestonesPerQuest = 4;
+        private int MilestonesReward = 250;
+        private int MilestoneLimit =1;
 
         public QuestService(
             ILogger logger, 
@@ -27,12 +27,12 @@ namespace PlayStudiosApi.Service.Services
             _logger = logger;
             _configuration = configuration;
 
-            RateFromBet = _configuration.RateFromBet;
-            LevelBonusRate = _configuration.LevelBonusRate;
-            TargetQuestPoints = _configuration.TargetQuestPoints;
-            MilestonesPerQuest = _configuration.MilestonesPerQuest;
-            MilestonesReward = _configuration.MilestonesReward;
-            MilestoneLimit = _configuration.MilestoneLimit;
+            //RateFromBet = _configuration.RateFromBet;
+            //LevelBonusRate = _configuration.LevelBonusRate;
+            //TargetQuestPoints = _configuration.TargetQuestPoints;
+            //MilestonesPerQuest = _configuration.MilestonesPerQuest;
+            //MilestonesReward = _configuration.MilestonesReward;
+            //MilestoneLimit = _configuration.MilestoneLimit;
         }
 
         public QuestState GetQuestState(string playerId)
@@ -50,13 +50,13 @@ namespace PlayStudiosApi.Service.Services
 
         public QuestProgress GetQuestProgress(PlayerInfo playerInfo)
         {
-            _logger
-                .Info($"Getting Quest Progress for player {JsonConvert.SerializeObject(playerInfo)}");
+            //_logger
+            //    .Information($"Getting Quest Progress for player {JsonConvert.SerializeObject(playerInfo)}");
 
             try
             {
                 var questPointsEarned = (playerInfo.ChipAmountBet * RateFromBet) + (playerInfo.PlayerLevel * LevelBonusRate);
-                var questPercentCompleted = (questPointsEarned / TargetQuestPoints) * 100;
+                var questPercentCompleted = ((double)questPointsEarned / TargetQuestPoints) * 100;
 
                 var mileStonePercent = 100 / MilestonesPerQuest;
                 var mileStoneIndex = questPercentCompleted / mileStonePercent;
@@ -65,17 +65,17 @@ namespace PlayStudiosApi.Service.Services
                 var result = new QuestProgress
                 {
                     QuestPointsEarned = questPointsEarned,
-                    TotalQuestPercentCompleted = questPercentCompleted,
+                    TotalQuestPercentCompleted = Convert.ToInt32(questPercentCompleted),
                     MilestonesCompleted = new MilestoneInfo
                     {
-                        MilestoneIndex = mileStoneIndex,
-                        ChipsAwarded = chipsAwarded
+                        MilestoneIndex = Convert.ToInt32(mileStoneIndex),
+                        ChipsAwarded = Convert.ToInt32(chipsAwarded)
                     }
                 };
 
                 _logger
-                    .Info($"Quest Progress for the player {playerInfo.PlayerId} retrieved successfully " +
-                             $"with result {JsonConvert.SerializeObject(result)}");
+                    .Information($"Quest Progress for the player {playerInfo.PlayerId} retrieved successfully " +
+                                    $"with result {JsonConvert.SerializeObject(result)}");
 
                 return result;
             }

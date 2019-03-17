@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 
 namespace PlayStudiosApi.Service.Configuration
 {
-    public class QuestConfiguration
+    public class QuestConfiguration : ConfigurationSection
     {
         public int RateFromBet { get; set; }
         public int LevelBonusRate { get; set; }

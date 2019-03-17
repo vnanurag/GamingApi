@@ -1,10 +1,10 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
-using NLog;
 using PlayStudiosApi.Autofac;
 using PlayStudiosApi.Service.Autofac;
 using PlayStudiosApi.Service.Services;
 using PlayStudiosApi.Service.Services.Interfaces;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,10 +35,6 @@ namespace PlayStudiosApi
             // Create the container builder
             var builder = new ContainerBuilder();
 
-            // Register Api controllers
-            builder
-                .RegisterApiControllers(Assembly.GetExecutingAssembly());
-
             // Register Modules
             builder
                 .RegisterModule<ApiModule>();
@@ -47,10 +43,15 @@ namespace PlayStudiosApi
                 .RegisterModule<ServiceModule>();
 
             builder
-                .RegisterType<Logger>()
+                .Register(x =>
+                {
+                    return new LoggerConfiguration()
+                      .WriteTo.File("log.txt",
+                                    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+                      .CreateLogger();
+                })
                 .As<ILogger>()
                 .SingleInstance();
-
 
             // Build the container
             var container = builder.Build();

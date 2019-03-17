@@ -80,9 +80,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\obj\Debug\PlayStudiosA
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\obj\Debug\PlayStudiosApi.csproj.CopyComplete
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\obj\Debug\PlayStudiosApi.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\obj\Debug\PlayStudiosApi.pdb
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\NLog.config
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\NLog.dll
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\NLog.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Swashbuckle.Core.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\WebActivatorEx.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.xml
@@ -101,3 +98,9 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.Extensions
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.Integration.WebApi.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.Integration.WebApi.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.Sinks.File.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.Sinks.File.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Newtonsoft.Json.pdb
