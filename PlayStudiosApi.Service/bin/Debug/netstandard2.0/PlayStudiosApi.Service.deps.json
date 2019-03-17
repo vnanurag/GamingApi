@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "7b3358b995da723ea09e969f06e94df68e82a438"
+    "signature": "e900fd3cd3c798591bafec11a0409fe3c8ed505f"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,6 +14,7 @@
           "Autofac.WebApi2": "4.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "NETStandard.Library": "2.0.3",
+          "NLog": "4.5.11",
           "Newtonsoft.Json": "12.0.1",
           "PlayStudiosApi.DataAccess": "1.0.0",
           "PlayStudiosApi.Domain": "1.0.0"
@@ -118,6 +119,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "NLog/4.5.11": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.5.11.8645"
           }
         }
       },
@@ -468,6 +477,13 @@
       "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "NLog/4.5.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Yni/XrDfbEhaCSXJsDkmW/n5AunhOxZ7OKKb+0U1I1/d8ZaKt3Jjzf20g/xPiKljmYuZKYqI5iI34g138kK8UQ==",
+      "path": "nlog/4.5.11",
+      "hashPath": "nlog.4.5.11.nupkg.sha512"
     },
     "Serilog/2.8.0": {
       "type": "package",
