@@ -12,3 +12,4 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Service\bin\Debug\nets
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Service\obj\Debug\netstandard2.0\PlayStudiosApi.Service.csproj.CopyComplete
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Service\obj\Debug\netstandard2.0\PlayStudiosApi.Service.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Service\obj\Debug\netstandard2.0\PlayStudiosApi.Service.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Service\bin\Debug\netstandard2.0\PlayStudiosApi.Service.dll.config

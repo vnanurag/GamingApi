@@ -6,7 +6,7 @@ using System.Web;
 
 namespace PlayStudiosApi.Service.Configuration
 {
-    public class QuestConfiguration : ConfigurationSection
+    public class QuestConfiguration
     {
         public int RateFromBet { get; set; }
         public int LevelBonusRate { get; set; }

@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi", "PlayStudi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Tests", "PlayStudiosApi.Tests\PlayStudiosApi.Tests.csproj", "{A88EDFAD-9D29-450F-AED5-7A8E8845A319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Service", "PlayStudiosApi.Service\PlayStudiosApi.Service.csproj", "{B8047F6E-B9B8-462F-910D-2023DC35FDEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayStudiosApi.Service", "PlayStudiosApi.Service\PlayStudiosApi.Service.csproj", "{B8047F6E-B9B8-462F-910D-2023DC35FDEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Domain", "PlayStudiosApi.Domain\PlayStudiosApi.Domain.csproj", "{E55E6041-8A3C-4B64-81CF-076154597B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayStudiosApi.Domain", "PlayStudiosApi.Domain\PlayStudiosApi.Domain.csproj", "{E55E6041-8A3C-4B64-81CF-076154597B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.DataAccess", "PlayStudiosApi.DataAccess\PlayStudiosApi.DataAccess.csproj", "{25A37CB7-9F11-4646-AF82-2D211916B561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayStudiosApi.DataAccess", "PlayStudiosApi.DataAccess\PlayStudiosApi.DataAccess.csproj", "{25A37CB7-9F11-4646-AF82-2D211916B561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

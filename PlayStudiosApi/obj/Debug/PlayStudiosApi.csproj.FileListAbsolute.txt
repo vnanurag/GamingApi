@@ -104,3 +104,8 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Serilog.Sinks.File.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Newtonsoft.Json.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.AccessControl.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.Permissions.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.Principal.Windows.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Service.dll.config

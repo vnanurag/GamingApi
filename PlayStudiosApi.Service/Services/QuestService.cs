@@ -2,10 +2,12 @@
 using Newtonsoft.Json;
 using PlayStudiosApi.Domain.Models;
 using PlayStudiosApi.Service.Configuration;
+using PlayStudiosApi.Service.Configuration.Services;
 using PlayStudiosApi.Service.Models;
 using PlayStudiosApi.Service.Services.Interfaces;
 using Serilog;
 using System;
+using System.Configuration;
 
 namespace PlayStudiosApi.Service.Services
 {
@@ -13,26 +15,26 @@ namespace PlayStudiosApi.Service.Services
     {
         private readonly ILogger _logger;
         private readonly QuestConfiguration _configuration;
-        private int RateFromBet = 10;
-        private int LevelBonusRate = 20;
-        private int TargetQuestPoints = 1000;
-        private int MilestonesPerQuest = 4;
-        private int MilestonesReward = 250;
-        private int MilestoneLimit =1;
+        private int RateFromBet;
+        private int LevelBonusRate;
+        private int TargetQuestPoints;
+        private int MilestonesPerQuest;
+        private int MilestonesReward;
+        private int MilestoneLimit;
 
         public QuestService(
-            ILogger logger, 
-            QuestConfiguration configuration)
+            ILogger logger)
+            //IConfigurationSectionFactory<QuestConfiguration> configuration)
         {
             _logger = logger;
-            _configuration = configuration;
+            //_configuration = configuration.Load("QuestConfig");
 
-            //RateFromBet = _configuration.RateFromBet;
-            //LevelBonusRate = _configuration.LevelBonusRate;
-            //TargetQuestPoints = _configuration.TargetQuestPoints;
-            //MilestonesPerQuest = _configuration.MilestonesPerQuest;
-            //MilestonesReward = _configuration.MilestonesReward;
-            //MilestoneLimit = _configuration.MilestoneLimit;
+            RateFromBet = Convert.ToInt32(ConfigurationManager.AppSettings["RateFromBet"]);
+            LevelBonusRate = Convert.ToInt32(ConfigurationManager.AppSettings["LevelBonusRate"]);
+            TargetQuestPoints = Convert.ToInt32(ConfigurationManager.AppSettings["TargetQuestPoints"]);
+            MilestonesPerQuest = Convert.ToInt32(ConfigurationManager.AppSettings["MilestonesPerQuest"]);
+            MilestonesReward = Convert.ToInt32(ConfigurationManager.AppSettings["MilestonesReward"]);
+            MilestoneLimit = Convert.ToInt32(ConfigurationManager.AppSettings["MilestoneLimit"]);
         }
 
         public QuestState GetQuestState(string playerId)
