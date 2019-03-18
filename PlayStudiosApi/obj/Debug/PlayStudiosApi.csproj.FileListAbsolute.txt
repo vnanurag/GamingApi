@@ -84,9 +84,7 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Swashbuckle.Core.d
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\WebActivatorEx.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Domain.dll
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Service.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Domain.pdb
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Service.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.Extensions.DependencyInjection.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\Autofac.Integration.WebApi.dll
@@ -108,4 +106,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Configurati
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.AccessControl.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.Permissions.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\System.Security.Principal.Windows.dll
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Service.dll.config
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Services.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Services.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.Services.dll.config

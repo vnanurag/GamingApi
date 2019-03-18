@@ -481,7 +481,7 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="M:PlayStudiosApi.Controllers.QuestController.GetQuestProgress(PlayStudiosApi.Service.Models.PlayerInfo)">
+        <member name="M:PlayStudiosApi.Controllers.QuestController.GetQuestProgress(PlayStudiosApi.Services.Models.PlayerInfo)">
             <summary>
             Gets the Quest progress
             </summary>

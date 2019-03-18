@@ -1,7 +1,9 @@
 ﻿using Autofac;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PlayStudiosApi.DataAccess.Autofac
 {
@@ -10,10 +12,6 @@ namespace PlayStudiosApi.DataAccess.Autofac
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
-
-            // Register DataAccess Module
-            builder
-                .RegisterModule<DataAccessModule>();
         }
     }
 }

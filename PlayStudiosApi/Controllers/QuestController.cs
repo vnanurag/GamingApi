@@ -1,6 +1,6 @@
 ﻿using PlayStudiosApi.Domain.Models;
-using PlayStudiosApi.Service.Models;
-using PlayStudiosApi.Service.Services.Interfaces;
+using PlayStudiosApi.Services.Models;
+using PlayStudiosApi.Services.Services.Interfaces;
 using Serilog;
 using System;
 using System.Web.Http;

@@ -202,7 +202,6 @@
     <Compile Include="Autofac\ApiModule.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\QuestController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -298,9 +297,9 @@
       <Project>{e55e6041-8a3c-4b64-81cf-076154597b88}</Project>
       <Name>PlayStudiosApi.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayStudiosApi.Service\PlayStudiosApi.Service.csproj">
-      <Project>{b8047f6e-b9b8-462f-910d-2023dc35fdea}</Project>
-      <Name>PlayStudiosApi.Service</Name>
+    <ProjectReference Include="..\PlayStudiosApi.Services\PlayStudiosApi.Services.csproj">
+      <Project>{fdf78b19-eadf-4ec8-a758-5aaf2e6cec7e}</Project>
+      <Name>PlayStudiosApi.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
