@@ -27,3 +27,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\obj\Debug\Pla
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\obj\Debug\PlayStudiosApi.Services.csproj.CopyComplete
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\obj\Debug\PlayStudiosApi.Services.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\obj\Debug\PlayStudiosApi.Services.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\bin\Debug\EntityFramework.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\bin\Debug\PlayStudiosApi.DataAccess.dll.config
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Services\bin\Debug\EntityFramework.xml

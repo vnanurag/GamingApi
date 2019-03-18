@@ -49,8 +49,8 @@ namespace PlayStudiosApi.Services.Services
 
         public QuestProgress GetQuestProgress(PlayerInfo playerInfo)
         {
-            //_logger
-            //    .Information($"Getting Quest Progress for player {JsonConvert.SerializeObject(playerInfo)}");
+            _logger
+                .Information($"Getting Quest Progress for player {JsonConvert.SerializeObject(playerInfo)}");
 
             try
             {

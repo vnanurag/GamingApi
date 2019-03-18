@@ -495,18 +495,5 @@
             <param name="playerId">Id of the player</param>
             <returns>Quest state</returns>
         </member>
-        <member name="M:PlayStudiosApi.Controllers.ValuesController.Get">
-            <summary>
-            Gets all the values
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:PlayStudiosApi.Controllers.ValuesController.Get(System.Int32)">
-            <summary>
-            Gets the value for the given id
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
     </members>
 </doc>

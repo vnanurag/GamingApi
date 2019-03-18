@@ -87,6 +87,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PlayStudiosApi.DataAccess\PlayStudiosApi.DataAccess.csproj">
+      <Project>{635edbf7-e230-4493-9903-0f30c1439fd5}</Project>
+      <Name>PlayStudiosApi.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PlayStudiosApi.Domain\PlayStudiosApi.Domain.csproj">
       <Project>{E55E6041-8A3C-4B64-81CF-076154597B88}</Project>
       <Name>PlayStudiosApi.Domain</Name>

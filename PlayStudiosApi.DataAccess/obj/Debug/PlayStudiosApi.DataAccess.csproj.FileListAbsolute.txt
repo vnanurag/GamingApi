@@ -1,0 +1,15 @@
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\PlayStudiosApi.DataAccess.dll.config
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\PlayStudiosApi.DataAccess.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\Autofac.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\Autofac.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\Autofac.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.csprojAssemblyReference.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.csproj.CopyComplete
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.pdb
