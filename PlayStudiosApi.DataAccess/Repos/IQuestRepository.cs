@@ -9,7 +9,7 @@ namespace PlayStudiosApi.DataAccess.Repos
 {
     public interface IQuestRepository
     {
-        List<Quest> GetQuestInfo();
         QuestState GetQuestState(string playerId);
+        Quest AddOrUpdateQuestState(Quest quest);
     }
 }

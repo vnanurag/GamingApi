@@ -13,3 +13,7 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\P
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.csproj.CopyComplete
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.Migrations.InitialMigration.resources
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\obj\Debug\PlayStudiosApi.DataAccess.csproj.GenerateResource.cache
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\IBM.Data.DB2.EntityFramework.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.DataAccess\bin\Debug\System.Data.DB2.EntityFramework.Migrations.dll

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using PlayStudiosApi.DataAccess.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,11 @@ namespace PlayStudiosApi.DataAccess.Autofac
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
+
+            // Register Services
+            builder
+                .RegisterType<QuestRepository>()
+                .As<IQuestRepository>();
         }
     }
 }

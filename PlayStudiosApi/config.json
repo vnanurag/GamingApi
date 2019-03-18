@@ -4,7 +4,6 @@
     "LevelBonusRate": 200,
     "TargetQuestPoints": 5000,
     "MilestonesPerQuest": 10,
-    "MilestonesReward": 3000,
-    "MilestoneLimit": 1
+    "MilestonesReward": 3000
   }
 }

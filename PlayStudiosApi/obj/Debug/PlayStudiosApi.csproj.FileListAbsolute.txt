@@ -113,3 +113,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\EntityFramework.dl
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\EntityFramework.SqlServer.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\EntityFramework.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\EntityFramework.SqlServer.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.DataAccess.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi\bin\PlayStudiosApi.DataAccess.dll.config

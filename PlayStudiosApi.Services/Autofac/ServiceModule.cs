@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using PlayStudiosApi.DataAccess.Autofac;
 using PlayStudiosApi.Services.Configuration;
 using PlayStudiosApi.Services.Services;
 using PlayStudiosApi.Services.Services.Interfaces;
@@ -11,27 +12,14 @@ namespace PlayStudiosApi.Services.Autofac
         {
             base.Load(builder);
 
-            //builder
-            //    .RegisterGeneric(typeof(ConfigurationSectionFactory<>))
-            //    .As(typeof(IConfigurationSectionFactory<>));
-
             // Register Services
             builder
                 .RegisterType<QuestService>()
                 .As<IQuestService>();
 
-            //builder
-            //    .RegisterType<QuestConfiguration>()
-            //    .AsSelf();
-
-            //builder
-            //    .Register(x =>
-            //    {
-            //        var factory = x.Resolve<IConfigurationSectionFactory<QuestConfiguration>>();
-            //        var section = factory.Load("QuestConfig");
-            //        return section;
-            //    })
-            //    .As<QuestConfiguration>();
+            // Register modules
+            builder
+                .RegisterModule<DataAccessModule>();
         }
     }
 }
