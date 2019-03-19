@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Castle.Core.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using PlayStudiosApi.DataAccess.DBContext;
 using PlayStudiosApi.DataAccess.Models;
@@ -22,23 +23,11 @@ namespace PlayStudiosApi.Services.Tests.Services
         private QuestService service;
         private Mock<IQuestRepository> repo = new Mock<IQuestRepository>();
         private Mock<ILogger> logger = new Mock<ILogger>();
-        private Mock<IConfigurationSectionHandler> config = new Mock<IConfigurationSectionHandler>();
-        private int RateFromBet;
-        private int LevelBonusRate;
-        private int TargetQuestPoints;
-        private int MilestonesPerQuest;
-        private int MilestonesReward;
 
         [TestInitialize]
         public void TestInitialize()
         {
             service = new QuestService(logger.Object, repo.Object);
-
-            RateFromBet = Convert.ToInt32(ConfigurationManager.AppSettings["RateFromBet"]);
-            LevelBonusRate = Convert.ToInt32(ConfigurationManager.AppSettings["LevelBonusRate"]);
-            TargetQuestPoints = Convert.ToInt32(ConfigurationManager.AppSettings["TargetQuestPoints"]);
-            MilestonesPerQuest = Convert.ToInt32(ConfigurationManager.AppSettings["MilestonesPerQuest"]);
-            MilestonesReward = Convert.ToInt32(ConfigurationManager.AppSettings["MilestonesReward"]);
         }
 
         [TestMethod]
@@ -81,7 +70,7 @@ namespace PlayStudiosApi.Services.Tests.Services
         public void GetQuestState_Success_Returns_Null()
         {
             // Arrange
-            var playerId = "Player3";
+            var playerId = "DoesNotExist";
 
             repo
                 .Setup(x => x.GetQuestState(playerId))
@@ -98,7 +87,7 @@ namespace PlayStudiosApi.Services.Tests.Services
         }
 
         [TestMethod]
-        public void GetQuestState_Failure_Returns_Exception()
+        public void GetQuestState_Failure_Throws_Exception()
         {
             try
             {
@@ -133,7 +122,7 @@ namespace PlayStudiosApi.Services.Tests.Services
                 ChipAmountBet = 30
             };
 
-            var questDb = new Quest
+            var output = new Quest
             {
                 PlayerId = playerInfo.PlayerId,
                 PlayerLevel = playerInfo.PlayerLevel,
@@ -145,7 +134,7 @@ namespace PlayStudiosApi.Services.Tests.Services
 
             repo
                 .Setup(x => x.AddOrUpdateQuestState(It.IsAny<Quest>()))
-                .Returns(questDb);
+                .Returns(output);
 
             logger
                 .Setup(x => x.Information("Logging quest state"));
@@ -154,9 +143,39 @@ namespace PlayStudiosApi.Services.Tests.Services
             var result = service.GetQuestProgress(playerInfo);
 
             // Assert
-            Assert.AreEqual(questDb.TotalQuestPercentCompleted, result.TotalQuestPercentCompleted);
-            Assert.AreEqual(questDb.LastMilestoneIndexCompleted, result.MilestonesCompleted.MilestoneIndex);
-            Assert.AreEqual(questDb.QuestPointsEarned, result.QuestPointsEarned);
+            Assert.AreEqual(output.TotalQuestPercentCompleted, result.TotalQuestPercentCompleted);
+            Assert.AreEqual(output.LastMilestoneIndexCompleted, result.MilestonesCompleted.MilestoneIndex);
+            Assert.AreEqual(output.QuestPointsEarned, result.QuestPointsEarned);
+        }
+
+        [TestMethod]
+        public void GetQuestProgress_Failure_Throws_Exception()
+        {
+            try
+            {
+                // Arrange
+                var playerInfo = new PlayerInfo
+                {
+                    PlayerId = "NewPlayer",
+                    PlayerLevel = 2,
+                    ChipAmountBet = 30
+                };
+
+                repo
+                    .Setup(x => x.AddOrUpdateQuestState(It.IsAny<Quest>()))
+                    .Throws(new Exception("Error"));
+
+                logger
+                    .Setup(x => x.Information("Logging quest state"));
+
+                // Act
+                var result = service.GetQuestProgress(playerInfo);
+            }
+            catch (Exception ex)
+            {
+                // Assert
+                Assert.AreEqual("Error", ex.Message);
+            }
         }
     }
 }

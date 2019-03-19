@@ -50,6 +50,9 @@ namespace PlayStudiosApi.Services.Services
 
                 if (questState == null)
                 {
+                    _logger
+                        .Information($"No data exists for player {playerId}");
+
                     return null;
                 }
 

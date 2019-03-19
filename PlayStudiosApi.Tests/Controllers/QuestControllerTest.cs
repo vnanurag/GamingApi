@@ -172,7 +172,7 @@ namespace PlayStudiosApi.Tests.Controllers
         }
 
         [TestMethod]
-        public void GetQuestState_Success_Returns_Null_If_PlayerDoesNotExist()
+        public void GetQuestState_Success_Returns_NotFound_If_PlayerDoesNotExist()
         {
             // Arrange
             var playerId = "DoesNotExist";
@@ -183,11 +183,9 @@ namespace PlayStudiosApi.Tests.Controllers
 
             // Act
             IHttpActionResult result = controller.GetQuestState(playerId);
-            var contentResult = result as OkNegotiatedContentResult<QuestState>;
 
             // Assert
-            Assert.IsInstanceOfType(result, typeof(OkNegotiatedContentResult<QuestState>));
-            Assert.IsNull(contentResult.Content);
+            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
         }
 
         [TestMethod]

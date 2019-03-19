@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28711.60
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi", "PlayStudiosApi\PlayStudiosApi.csproj", "{B847423F-AE95-4BA0-8451-CDE7D0457A01}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.DataAccess", "PlayStudiosApi.DataAccess\PlayStudiosApi.DataAccess.csproj", "{635EDBF7-E230-4493-9903-0F30C1439FD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Services.Tests", "PlayStudiosApi.Services.Tests\PlayStudiosApi.Services.Tests.csproj", "{697E8FAE-033D-4EA0-B59F-101CA3F39057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.DataAccess.Tests", "PlayStudiosApi.DataAccess.Tests\PlayStudiosApi.DataAccess.Tests.csproj", "{18F56AEA-541F-4463-916A-26F457CBA14B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F56AEA-541F-4463-916A-26F457CBA14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F56AEA-541F-4463-916A-26F457CBA14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F56AEA-541F-4463-916A-26F457CBA14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F56AEA-541F-4463-916A-26F457CBA14B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

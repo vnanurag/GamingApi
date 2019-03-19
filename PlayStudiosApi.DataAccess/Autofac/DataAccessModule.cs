@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using PlayStudiosApi.DataAccess.DBContext;
 using PlayStudiosApi.DataAccess.Repos;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,10 @@ namespace PlayStudiosApi.DataAccess.Autofac
             builder
                 .RegisterType<QuestRepository>()
                 .As<IQuestRepository>();
+
+            builder
+                .RegisterType<QuestDbContext>()
+                .AsSelf();
         }
     }
 }

@@ -76,6 +76,11 @@ namespace PlayStudiosApi.Controllers
                 }
 
                 var response = _questService.GetQuestState(playerId);
+                if (response == null)
+                {
+                    return NotFound();
+                }
+
                 return Ok(response);
             }
             catch (Exception ex)

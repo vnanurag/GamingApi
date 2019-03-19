@@ -7,3 +7,12 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Domain\obj\Debug\netst
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.csprojAssemblyReference.cache
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\bin\Debug\netstandard2.0\PlayStudiosApi.Domain.deps.json
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\bin\Debug\netstandard2.0\PlayStudiosApi.Domain.dll
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\bin\Debug\netstandard2.0\PlayStudiosApi.Domain.pdb
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.csprojAssemblyReference.cache
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.AssemblyInfoInputs.cache
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.AssemblyInfo.cs
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.dll
+C:\Users\avutukuri\Downloads\Anurag\PlayStudios\PlayStudiosApi.Domain\obj\Debug\netstandard2.0\PlayStudiosApi.Domain.pdb
