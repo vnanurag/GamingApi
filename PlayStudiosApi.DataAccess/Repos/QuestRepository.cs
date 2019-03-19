@@ -70,16 +70,15 @@ namespace PlayStudiosApi.DataAccess.Repos
             try
             {
                 var questFromDb = _db
-                                        .Quests
-                                        .Where(x => x.PlayerId == quest.PlayerId)
-                                        .FirstOrDefault();
+                                    .Quests
+                                    .Where(x => x.PlayerId == quest.PlayerId)
+                                    .FirstOrDefault();
 
                 if (questFromDb == null)
                 {
                     // Adding a quest for the first time
                     _db.Quests.Add(quest);
                     _db.SaveChanges();
-
                     var response = GetUpdatedQuest(quest.PlayerId);
                     return response;
                 }
@@ -150,17 +149,14 @@ namespace PlayStudiosApi.DataAccess.Repos
             }
         }
 
-        private Quest GetUpdatedQuest(string playerId)
+        public virtual Quest GetUpdatedQuest(string playerId)
         {
             try
             {
-                using (var db = new QuestDbContext())
-                {
-                    return db
-                            .Quests
-                            .Where(x => x.PlayerId == playerId)
-                            .FirstOrDefault();
-                }
+                return _db
+                        .Quests
+                        .Where(x => x.PlayerId == playerId)
+                        .FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -169,17 +165,14 @@ namespace PlayStudiosApi.DataAccess.Repos
             }
         }
 
-        private bool IsMilestoneCompleted(string playerId, int milestone)
+        public bool IsMilestoneCompleted(string playerId, int milestone)
         {
             try
             {
-                using (var db = new QuestDbContext())
-                {
-                    return db
-                             .Quests
-                             .Any(x => x.PlayerId == playerId 
-                                    && x.LastMilestoneIndexCompleted >= milestone);
-                }
+                return _db
+                        .Quests
+                        .Any(x => x.PlayerId == playerId
+                            && x.LastMilestoneIndexCompleted >= milestone);
             }
             catch (Exception ex)
             {
