@@ -10,6 +10,6 @@ namespace PlayStudiosApi.DataAccess.DBContext
 {
     public class QuestDbContext : DbContext
     {
-        public DbSet<Quest> Quests { get; set; }
+        public virtual DbSet<Quest> Quests { get; set; }
     }
 }

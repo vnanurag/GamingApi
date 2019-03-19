@@ -45,7 +45,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Autofa
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\WebActivatorEx.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Swashbuckle.Core.dll
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Service.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Domain.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\WebGrease.dll
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Antlr3.Runtime.dll
@@ -57,7 +56,6 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Autofa
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Autofac.Integration.WebApi.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Autofac.Integration.WebApi.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
-C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Service.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Domain.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Serilog.dll
@@ -66,3 +64,20 @@ C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Newton
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Serilog.pdb
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Serilog.xml
 C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Castle.Core.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Moq.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Services.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.DataAccess.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\EntityFramework.dll
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Services.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.Services.dll.config
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Castle.Core.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Moq.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\Moq.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.DataAccess.pdb
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\PlayStudiosApi.DataAccess.dll.config
+C:\Users\vnanu\source\repos\PlayStudiosApi\PlayStudiosApi.Tests\bin\Debug\EntityFramework.xml

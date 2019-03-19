@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Services", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.DataAccess", "PlayStudiosApi.DataAccess\PlayStudiosApi.DataAccess.csproj", "{635EDBF7-E230-4493-9903-0F30C1439FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayStudiosApi.Services.Tests", "PlayStudiosApi.Services.Tests\PlayStudiosApi.Services.Tests.csproj", "{697E8FAE-033D-4EA0-B59F-101CA3F39057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{635EDBF7-E230-4493-9903-0F30C1439FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635EDBF7-E230-4493-9903-0F30C1439FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635EDBF7-E230-4493-9903-0F30C1439FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697E8FAE-033D-4EA0-B59F-101CA3F39057}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

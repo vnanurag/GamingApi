@@ -29,7 +29,7 @@ namespace PlayStudiosApi.DataAccess.Repos
 
                     if (result == null)
                     {
-                        throw new Exception($"Quest State not found for player {playerId}");
+                        return null;
                     }
 
                     return result;
@@ -38,7 +38,7 @@ namespace PlayStudiosApi.DataAccess.Repos
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
 
@@ -53,8 +53,9 @@ namespace PlayStudiosApi.DataAccess.Repos
                                         .Where(x => x.PlayerId == quest.PlayerId)
                                         .FirstOrDefault();
 
-                    if (questFromDb == null) // Adding a quest for the first time
+                    if (questFromDb == null)
                     {
+                        // Adding a quest for the first time
                         db.Quests.Add(quest);
                         db.SaveChanges();
 
@@ -64,11 +65,13 @@ namespace PlayStudiosApi.DataAccess.Repos
                     else
                     {
                         // Check if the milestone has already been achieved
-                        if (IsMilestoneCompleted(quest.PlayerId, quest.LastMilestoneIndexCompleted))
+                        var milestoneAchieved = IsMilestoneCompleted(quest.PlayerId, quest.LastMilestoneIndexCompleted);
+                        if (milestoneAchieved)
                         {
                             throw new Exception("This milestone has been completed. You can't complete a milestone more than once");
                         }
 
+                        // Update the quest in DB with new information
                         questFromDb.PlayerLevel = quest.PlayerLevel;
                         questFromDb.QuestPointsEarned = quest.QuestPointsEarned;
                         questFromDb.TotalQuestPercentCompleted = quest.TotalQuestPercentCompleted;
@@ -85,7 +88,7 @@ namespace PlayStudiosApi.DataAccess.Repos
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
 
@@ -104,7 +107,7 @@ namespace PlayStudiosApi.DataAccess.Repos
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
 
@@ -123,7 +126,7 @@ namespace PlayStudiosApi.DataAccess.Repos
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
     }

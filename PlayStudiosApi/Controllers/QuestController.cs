@@ -22,6 +22,8 @@ namespace PlayStudiosApi.Controllers
             _logger = logger;
         }
 
+        // api/progress
+
         /// <summary>
         /// Gets the Quest progress
         /// </summary>
@@ -34,9 +36,9 @@ namespace PlayStudiosApi.Controllers
         {
             try
             {
-                if (playerInfo == null)
+                if (string.IsNullOrEmpty(playerInfo.PlayerId))
                 {
-                    _logger.Error("Bad Request.");
+                    _logger.Error("Bad Request. Player Id is not valid.");
                     return BadRequest("Please provide valid player information to see the quest progress.");
                 }
 
@@ -52,6 +54,9 @@ namespace PlayStudiosApi.Controllers
             }
         }
 
+        // api/state?playerId=4
+        // Use [HttpGet("state/{playerId}")] for api/state/4
+
         /// <summary>
         /// Gets the Quest state for a player
         /// </summary>
@@ -66,7 +71,7 @@ namespace PlayStudiosApi.Controllers
             {
                 if (string.IsNullOrEmpty(playerId))
                 {
-                    _logger.Error("Player Id is not valid.");
+                    _logger.Error("Bad Request. Player Id is not valid");
                     return BadRequest("Player Id is not valid.");
                 }
 

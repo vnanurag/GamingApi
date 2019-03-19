@@ -48,6 +48,11 @@ namespace PlayStudiosApi.Services.Services
                 var questState = _questRepository
                                         .GetQuestState(playerId);
 
+                if (questState == null)
+                {
+                    return null;
+                }
+
                 var result = new QuestState
                 {
                     TotalQuestPercentCompleted = Convert.ToInt32(questState.TotalQuestPercentCompleted),
