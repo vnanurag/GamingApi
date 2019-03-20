@@ -356,7 +356,7 @@
   },
   "libraries": {
     "Autofac/4.9.1": {
-      "sha512": "Dk3UQD94XM2HBjquOZoPWrQBUcv9G/K24K/qTiUJi13Fz/0X/wxcQi8z3K1ProCPxuZvadSgrzbpbni2HX1YTg==",
+      "sha512": "L92DMQxpy4Xw3IypXxL8Z4NHt+qIkB1e0NB2OJ9u105Xp5sVsZSJ04YtYyubmM3KG8aC+WpyBhN14XcjPx5gLg==",
       "type": "package",
       "path": "autofac/4.9.1",
       "files": [
@@ -376,7 +376,7 @@
       ]
     },
     "Autofac.Extensions.DependencyInjection/4.4.0": {
-      "sha512": "XO9Zk1zIUv9FyuGg9biGlGTPrSamdZKSZ+lHGTxnOaKkTmW1iWP276nlQ/l2V3XoVk86+SHyRnzH5MmhULGamg==",
+      "sha512": "tkNVcEVTG+asY338sZQNbWQIoCrb13I6qOxBrVX7aStu7SGskDDyGT0TrqiJdfEB48GbCd04ZcNz86TdD4cIHg==",
       "type": "package",
       "path": "autofac.extensions.dependencyinjection/4.4.0",
       "files": [
@@ -393,7 +393,7 @@
       ]
     },
     "Autofac.WebApi2/4.2.0": {
-      "sha512": "ggpkB3mvCHJDZaQFkTAHVhHRkgoCSZvcAq4p/hnnyKqVYXnFl7o1R2wZScbEiVHK+nikmPyfVL7zRpL9hW7AQQ==",
+      "sha512": "Ood0PCoPUW/wCPoMIc+Px7hd/2mkKM+Fstq9q9mys7ISqCWl/dVUzvdb8pC9aGbHfOhK4owZ7HlBBQW7H+N/jQ==",
       "type": "package",
       "path": "autofac.webapi2/4.2.0",
       "files": [
@@ -407,7 +407,7 @@
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.0": {
-      "sha512": "/BojFKEwOghoNhjXfLGelrgMkEnvWuJS88+C82cSGyuX0rOEalewIZkUOSuKX30lCXiptzBafT6dIjbO7VmtvA==",
+      "sha512": "aoS8o4BPb1Wc0A3W5xX0iHiqgnk9xmP4iSxZdNlEbtu5SgTgDyKya5FGq4GzjRw7FlQDBQ5t9s4p/saa0OFA4A==",
       "type": "package",
       "path": "microsoft.aspnet.webapi.client/5.2.0",
       "files": [
@@ -422,7 +422,7 @@
       ]
     },
     "Microsoft.AspNet.WebApi.Core/5.2.0": {
-      "sha512": "FQIGqfEKJEycZrvtUhiChmg2F9eKQTPgMBXfowSsS2ztmRY8Fzgi+TLpOZ6E1yVUMOjYwazYenVkyF7wLERCcA==",
+      "sha512": "OndfBxMYy/rFi86YAtzV2P815P09ZQnJNjDdCwN5v9cutN6GdI0YVcdlMlNw/WpVg9iN1yLkUxMx433tIQ15ZA==",
       "type": "package",
       "path": "microsoft.aspnet.webapi.core/5.2.0",
       "files": [
@@ -436,7 +436,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
-      "sha512": "kDs/SngBdfZZRvbxu24sVqe22PSjCtLx7T1YOeJxs07Gnvb9rCNWwE/kjubRpS5N2AXu2ycxN/n6jeQF48vpkw==",
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
       "files": [
@@ -449,11 +449,12 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -605,7 +606,7 @@
       ]
     },
     "Serilog/2.8.0": {
-      "sha512": "3jtlNpLFGz16ZEYZ0lohfUlVLspg+DW6kRVNC2rOtie6Xy+fIibtqFSZ6lQRdRKV6ER9WLxg+Q3em6f6ZccJ3A==",
+      "sha512": "zjuKXW5IQws43IHX7VY9nURsaCiBYh2kyJCWLJRSWrTsx/syBKHV8MibWe2A+QH3Er0AiwA+OJmO3DhFJDY1+A==",
       "type": "package",
       "path": "serilog/2.8.0",
       "files": [
@@ -1798,23 +1799,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\avutukuri\\.nuget\\packages\\": {},
+    "C:\\Users\\vnanu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\avutukuri\\Downloads\\Anurag\\PlayStudios\\PlayStudiosApi.Domain\\PlayStudiosApi.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\vnanu\\source\\repos\\PlayStudiosApi\\PlayStudiosApi.Domain\\PlayStudiosApi.Domain.csproj",
       "projectName": "PlayStudiosApi.Domain",
-      "projectPath": "C:\\Users\\avutukuri\\Downloads\\Anurag\\PlayStudios\\PlayStudiosApi.Domain\\PlayStudiosApi.Domain.csproj",
-      "packagesPath": "C:\\Users\\avutukuri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\avutukuri\\Downloads\\Anurag\\PlayStudios\\PlayStudiosApi.Domain\\obj\\",
+      "projectPath": "C:\\Users\\vnanu\\source\\repos\\PlayStudiosApi\\PlayStudiosApi.Domain\\PlayStudiosApi.Domain.csproj",
+      "packagesPath": "C:\\Users\\vnanu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vnanu\\source\\repos\\PlayStudiosApi\\PlayStudiosApi.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\avutukuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vnanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1822,8 +1823,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dlssit.pkgs.visualstudio.com/_packaging/DLSS@Local/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

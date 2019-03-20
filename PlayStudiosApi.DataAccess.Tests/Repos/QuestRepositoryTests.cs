@@ -108,34 +108,36 @@ namespace PlayStudiosApi.DataAccess.Tests.Repos
         }
 
         [TestMethod]
-        public void AddOrUpdateQuestState_Success_AddsToDb_Returns_QuestFromDb()
+        public void AddOrUpdateQuestState_Success_UpdatesDb_Returns_QuestFromDb()
         {
             // Arrange
+            var quest1 = new Quest
+            {
+                Id = 1,
+                PlayerId = "Player1",
+                PlayerLevel = 2,
+                ChipsAwarded = 20,
+                QuestPointsEarned = 200,
+                TotalQuestPercentCompleted = 30,
+                LastMilestoneIndexCompleted = 1
+            };
+
             var dbRequest = new Quest
             {
-                Id = 3,
-                PlayerId = "NewPlayer",
-                PlayerLevel = 4,
-                ChipsAwarded = 40,
-                QuestPointsEarned = 400,
-                TotalQuestPercentCompleted = 60,
-                LastMilestoneIndexCompleted = 4
+                Id = 1,
+                PlayerId = "Player1",
+                PlayerLevel = 5,
+                ChipsAwarded = 70,
+                QuestPointsEarned = 800,
+                TotalQuestPercentCompleted = 80,
+                LastMilestoneIndexCompleted = 5
             };
-            //questsList.Add(dbRequest);
-            //quests.Setup(x => x.Add(dbRequest)).Returns(repo.GetUpdatedQuest(dbRequest.PlayerId));
-            //db.Setup(x => x.Quests).Returns(quests.Object);
-            //db.Setup(x => x.SaveChanges());
-            //repo.GetUpdatedQuest(dbRequest.PlayerId);
-
-            Mock<QuestRepository> test = new Mock<QuestRepository>();
-            test.Setup(x => x.GetUpdatedQuest(dbRequest.PlayerId)).Returns(dbRequest);
 
             // Act
             var result = repo.AddOrUpdateQuestState(dbRequest);
 
             // Assert
-            quests.Verify(x => x.Add(dbRequest), Times.Once);
-            Assert.AreEqual(dbRequest.PlayerId, result.PlayerId);
+            Assert.AreEqual(quest1.PlayerId, result.PlayerId);
             Assert.AreEqual(dbRequest.PlayerLevel, result.PlayerLevel);
             Assert.AreEqual(dbRequest.ChipsAwarded, result.ChipsAwarded);
             Assert.AreEqual(dbRequest.QuestPointsEarned, result.QuestPointsEarned);
@@ -173,6 +175,38 @@ namespace PlayStudiosApi.DataAccess.Tests.Repos
 
                 // Assert
                 Assert.AreEqual(output, ex.Message);
+            }
+        }
+
+        [TestMethod]
+        public void AddOrUpdateQuestState_Failure_Throws_Exception()
+        {
+            try
+            {
+                // Arrange
+                var dbRequest = new Quest
+                {
+                    Id = 6,
+                    PlayerId = "PlayerError",
+                    PlayerLevel = 4,
+                    ChipsAwarded = 40,
+                    QuestPointsEarned = 400,
+                    TotalQuestPercentCompleted = 60,
+                    LastMilestoneIndexCompleted = 1
+                };
+
+                db
+                .Setup(x => x.Quests)
+                .Throws(new Exception("Error"));
+
+                // Act
+                var result = repo.AddOrUpdateQuestState(dbRequest);
+            }
+            catch (Exception ex)
+            {
+                
+                // Assert
+                Assert.AreEqual("Error", ex.Message);
             }
         }
     }

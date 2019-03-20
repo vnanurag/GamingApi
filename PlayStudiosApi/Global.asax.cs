@@ -3,6 +3,7 @@ using Autofac.Integration.WebApi;
 using PlayStudiosApi.Autofac;
 using PlayStudiosApi.Services.Autofac;
 using Serilog;
+using System.Configuration;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -38,10 +39,15 @@ namespace PlayStudiosApi
             builder
                 .Register(x =>
                 {
-                    return new LoggerConfiguration()
-                      .WriteTo.File("log.txt",
-                                    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
-                      .CreateLogger();
+                    var logger =  new LoggerConfiguration()
+                        .MinimumLevel.Debug()
+                        .WriteTo.Seq(
+                            serverUrl: ConfigurationManager.AppSettings["SeqUrl"])
+                        .CreateLogger();
+
+                    logger.Information("Starting Up...");
+
+                    return logger;
                 })
                 .As<ILogger>()
                 .SingleInstance();
